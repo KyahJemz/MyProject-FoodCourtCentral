@@ -1,0 +1,221 @@
+body {
+    height: 100vh;
+}
+
+.banner {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.267);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.banner .banner-title {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0px 0px 50px black;
+}
+
+.banner .banner-subtitle {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 0px 0px 50px black;
+}
+
+.about {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    background-color: rgba(82, 52, 10, 0.397);
+    text-align: center;
+}
+
+.about .about-title {
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0px 0px 50px black;
+}
+
+.about .about-subtitle {
+    font-size: 1.3rem;
+    color: white;
+    text-shadow: 0px 0px 50px black;
+}
+
+.suggested {
+    padding: 50px;
+    min-height: 100%;
+    height: fit-content;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgba(0, 0, 0, 0.616);
+}
+
+
+.suggested .suggested-row{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.suggested .suggested-row .title{
+    font-size: 1.4rem;
+    color: white;
+    text-shadow: 0px 0px 5px black;
+    background-color: rgba(0, 0, 0, 0.062);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+
+.suggested .suggested-row .card-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.suggested .suggested-row .card-item{
+    aspect-ratio: 2.5/3;
+    height: 250;
+    margin-right: 10px;  
+    border-radius: 5px; 
+    background-color: rgba(255, 255, 255, 0.795);
+    box-shadow: 0px 0px 10px 0.1px rgba(0, 0, 0, 0.596);
+    position: relative;
+    padding: 10px;
+}
+
+.suggested .suggested-row .card-item:hover{
+    box-shadow: 0px 0px 10px 0.5px rgb(0, 0, 0);
+}
+
+#suggested-items-container .card-item .StoreName{
+    width: 100%;
+    font-size: 0.7rem;
+    padding-bottom: 2.5px;
+    margin-bottom: 2.5px;
+    border-bottom: 1px solid gainsboro;
+}
+
+#suggested-items-container .card-item .ItemImage{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 0.7rem;
+    padding-bottom: 2.5px;
+    margin-bottom: 2.5px;
+    border: 1px solid gainsboro;
+    overflow: hidden;
+}
+
+#suggested-items-container .card-item .ItemName {
+    font-size: 0.9rem;
+    font-weight: 550;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+#suggested-items-container .card-item .ItemCategory {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#suggested-items-container .card-item .ItemPrice {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+#suggested-items-container .card-item .Button {
+    text-align: center;
+    margin-top: 5px;
+    width: 100%;
+    border-top: 1px solid gainsboro;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#suggested-stores-container .card-item .StoreImage{
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 0.7rem;
+    padding-bottom: 2.5px;
+    margin-bottom: 2.5px;
+    border: 1px solid gainsboro;
+    overflow: hidden;
+}
+
+#suggested-stores-container .card-item .StoreName {
+    font-size: 0.9rem;
+    font-weight: 550;
+    text-align: center;
+}
+
+
+#suggested-stores-container .card-item .Button {
+    margin-top: 20px;
+    text-align: center;
+    margin-top: 8px;
+    width: 100%;
+    border-top: 1px solid gainsboro;
+    padding: 10px;
+}
+
+.suggested .suggested-row .card-item .button button{
+    width: 100%;
+    cursor: pointer;
+    background-color: burlywood;
+    border: 1px solid rgb(250, 205, 147);
+    border-radius: 4px;
+    font-weight: 100;
+}
+
+.suggested .suggested-row .card-item .button Button:hover {
+    border-color: burlywood;
+}
+
+.suggested .suggested-row .card-item .button Button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 0px 10px 1px rgba(109, 109, 109, 0.411);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    background-color: rgba(235, 221, 203, 0.966);
+    box-shadow: 0px 0px 10px 2px rgb(0, 0, 0);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 0px;
+}
